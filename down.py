@@ -3,6 +3,7 @@
 import requests
 import os, os.path
 import multiprocessing
+import time
 
 class Download(object):
     ''' Use Download object to download http resource. 
@@ -146,10 +147,3 @@ class Download(object):
     def __clear(paths):
         for path in paths:
             os.remove(path)
-
-
-if __name__ == "__main__":
-    task = Download("https://www.python.org/ftp/python/2.7.13/python-2.7.13-macosx10.6.pkg", 
-            thread_num=2, path="./python2.7.13-mac.pkg", block=False)
-    task.start()
-    print "here!!!"
