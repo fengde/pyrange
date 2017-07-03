@@ -107,7 +107,7 @@ class Download(object):
     @staticmethod
     def __down(url, content_length, subprocess_num, filedir, filename, block, callback):
         slice= content_length / subprocess_num
-
+        
         paths, workers = [], []
         for i in range(subprocess_num):
             if i < (subprocess_num-1):
@@ -128,8 +128,8 @@ class Download(object):
         Download.__merge_file(from_file_paths=paths, to_file_path=filepath)
         Download.__clear(paths)
 
-        if (not block) and callable:
-            self.callback(url, filepath)
+        if (not block) and callback:
+            callback(url, filepath)
 
     @staticmethod
     def __merge_file(from_file_paths, to_file_path):
