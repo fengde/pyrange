@@ -4,12 +4,12 @@
       **暂时已经完成了分片下载（也支持普通下载）的接口**
 
       ------
-   
-      **使用example**（以下载https://www.python.org/ftp/python/2.7.13/python-2.7.13-macosx10.6.pkg为例)
+
+      **使用指南**（以下载https://www.python.org/ftp/python/2.7.13/python-2.7.13-macosx10.6.pkg为例)
 
       ​	1）普通下载
 
-      ``import pyrange``
+      `import pyrange`
 
       `task = pyrange.Download("https://www.python.org/ftp/python/2.7.13/python-2.7.13-macosx10.6.pkg")`
 
@@ -35,6 +35,4 @@
 
       `task.start()`
 
-      `task.wait()`
-
-     
+      `task.wait()`
