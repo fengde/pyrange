@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-from .down import down, is_support, get_content_length
+from .down import Download
 
 __title__ = "pyrange"
 __version__ = '1.1.0'

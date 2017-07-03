@@ -3,7 +3,6 @@
 import requests
 import os, os.path
 import multiprocessing
-import time
 
 class Download(object):
     ''' Use Download object to download http resource. 
