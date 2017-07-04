@@ -1,13 +1,11 @@
 1. # pyrange
-      提供文件分片下载和上传的接口
-
-      **暂时已经完成了分片下载（也支持普通下载）的接口**
+      **just support download by range now.**
 
       ------
 
-      **使用指南**（以下载https://www.python.org/ftp/python/2.7.13/python-2.7.13-macosx10.6.pkg为例)
+      **example**
 
-      ​	1）普通下载
+      ​     1）common download.
 
       `import pyrange`
 
@@ -15,7 +13,7 @@
 
       `task.start()`
 
-      ​	2）指定下载线程数和保存路径，阻塞模式
+      ​     2）download in block mode.
 
       `import pyrange`
 
@@ -23,7 +21,7 @@
 
       `task.start()`
 
-      ​	3)  指定下载线程数和保存路径，非阻塞模式，支持下载完成回调函数
+      ​     3)  download in unblock mode, also support callback.
 
       `import pyrange`
 
